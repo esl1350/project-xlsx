@@ -1,3 +1,14 @@
 [gd_scene format=3 uid="uid://dxlfbmoph5na6"]
 
+[ext_resource type="Script" uid="uid://dmbs0uq7wtgfn" path="res://ui/SanityBar.cs" id="1_sktel"]
+
 [node name="MainOffice" type="Node2D" unique_id=638486899]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=276596818]
+
+[node name="SanityBar" type="ProgressBar" parent="CanvasLayer" unique_id=202039339]
+offset_right = 327.0
+offset_bottom = 27.0
+script = ExtResource("1_sktel")
+
+[node name="GlobalTimer" type="Timer" parent="." unique_id=1709137939]
