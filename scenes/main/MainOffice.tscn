@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dxlfbmoph5na6"]
 
-[ext_resource type="Script" uid="uid://dmbs0uq7wtgfn" path="res://ui/SanityBar.cs" id="1_sktel"]
+[ext_resource type="Script" uid="uid://dmbs0uq7wtgfn" path="res://scripts/ui/SanityBar.cs" id="1_npjjf"]
+[ext_resource type="Script" uid="uid://imrvnr5u8gh5" path="res://scripts/gameplay/SanityManager.cs" id="2_npjjf"]
 
 [node name="MainOffice" type="Node2D" unique_id=638486899]
 
@@ -9,6 +10,11 @@
 [node name="SanityBar" type="ProgressBar" parent="CanvasLayer" unique_id=202039339]
 offset_right = 327.0
 offset_bottom = 27.0
-script = ExtResource("1_sktel")
+script = ExtResource("1_npjjf")
+metadata/_edit_use_anchors_ = true
 
-[node name="GlobalTimer" type="Timer" parent="." unique_id=1709137939]
+[node name="SanityManager" type="Node" parent="." unique_id=750799116]
+unique_name_in_owner = true
+script = ExtResource("2_npjjf")
+
+[connection signal="SanityChange" from="SanityManager" to="CanvasLayer/SanityBar" method="OnSanityChange"]
