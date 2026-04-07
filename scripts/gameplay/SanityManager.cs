@@ -22,7 +22,8 @@ public partial class SanityManager : Node
 	public override void _Ready()
 	{
 		_currentSanity = _maxSanity;
-;		_sanityTimer.WaitTime = 1.0f / _sanityDrainRatePerSecond;
+		_sanityTimer.WaitTime = 1.0f / _sanityDrainRatePerSecond;
+		_sanityTimer.Autostart = true;
 		_sanityDrainRatePerTick = _sanityDrainRatePerSecond / _sanityTicksPerSecond;
 		EmitSignal(SignalName.SanityChange, _currentSanity, _currentSanity, 1.0f);
 		AddChild(_sanityTimer);

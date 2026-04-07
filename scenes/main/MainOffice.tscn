@@ -8,6 +8,8 @@
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=276596818]
 
 [node name="SanityBar" type="ProgressBar" parent="CanvasLayer" unique_id=202039339]
+anchors_preset = -1
+anchor_right = 0.17239584
 offset_right = 327.0
 offset_bottom = 27.0
 script = ExtResource("1_npjjf")
