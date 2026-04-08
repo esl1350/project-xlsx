@@ -19,4 +19,7 @@ metadata/_edit_use_anchors_ = true
 unique_name_in_owner = true
 script = ExtResource("2_npjjf")
 
+[node name="TaskSpawner" type="Node2D" parent="." unique_id=718115232]
+unique_name_in_owner = true
+
 [connection signal="SanityChange" from="SanityManager" to="CanvasLayer/SanityBar" method="OnSanityChange"]

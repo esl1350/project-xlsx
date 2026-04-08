@@ -36,4 +36,9 @@ public partial class SanityManager : Node
 		EmitSignal(SignalName.SanityChange, _currentSanity, newSanity, newSanity/_maxSanity);
 		_currentSanity = newSanity;
 	}
+
+	public void RestoreSanity()
+	{
+		
+	}
 }
